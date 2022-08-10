@@ -1,0 +1,10 @@
+.smartDatatable {
+  width: 100%;
+}
+.smartDatatable th {
+  font-size: 14px;
+  padding: 10px 0;
+  font-weight: 400;
+  background-color: #40769A;
+  color: #fff;
+}

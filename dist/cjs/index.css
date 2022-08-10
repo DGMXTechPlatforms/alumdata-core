@@ -1,0 +1,1762 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Maax';
+  src: url('css/fonts/Maax.eot');
+  src: url('css/fonts/Maax.eot?#iefix') format('embedded-opentype'),
+  url('css/fonts/Maax.woff') format('woff'),
+  url('css/fonts/Maax.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.cssLoginContainer {
+    background-color: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.cssLoginIzq {
+    background: transparent url(../img/bg-login-2.jpg) no-repeat center /cover;
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+}
+
+.cssLoginDer {
+    background: #ffffff no-repeat center /cover;
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+}
+
+.cssLogoSmartEd {
+    background: transparent url(../img/LogoAlumdata.svg) no-repeat center /contain; 
+    margin: auto;
+    display: flex;
+    width: 66%;
+    flex-direction: column;
+    height: 100px;
+    position: relative;
+}
+
+.cssLogoDgmx {
+    background: transparent url(../img/IsotipoAlumdata.svg) no-repeat center /contain; 
+    margin: auto;
+    display: flex;
+    width: 25%;
+    flex-direction: row;
+    height: 100px;
+    position: relative;
+    float: right;
+}
+
+.form {
+    background-color: #ffffff;
+    box-shadow: 2px 2px 10px #333;
+    width: 33%;
+    height: 300px; 
+    display: flex;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.iconInputs {
+    width: 25px;
+    position: absolute;
+    padding: 0.25rem 1rem;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:1000px) {
+    .cssLoginIzq {
+        width: 100%;
+        top: 0; 
+        left: 0;
+        height: 35vh;
+    }
+
+    .cssLoginDer {
+        width: 100%;
+        background-color: transparent;
+        font-size: 2vh;
+    }
+
+    .cssLoginDer h1 {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .cssLoginDer h2 {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+
+    .cssLogoSmartEd {
+        width: 100%;
+        height: 10vh;
+        background-color: rgba(255,255,255,0.7);
+        margin-top: -8vh;
+    }
+
+    .cssLoginText {
+        position: relative;
+        top: 24vh;
+    }
+
+    .cssLoginDer .mt-14 {
+        margin-top: 15vh;
+    }
+
+    .cssLoginDer .p-3 {
+        padding: 0px;
+    }
+
+    .cssLoginDer form {
+        width: 100%;
+        margin: auto;
+        margin-top: 20vh !important;
+    }
+    
+    .cssLoginDer form input {
+        border-radius: 2rem;
+        font-size: 1rem;
+        background-color: white;
+    }
+
+    .cssLoginDer form .h-16 {
+        height: 7vh;
+    }
+
+    .cssLoginDer br {
+        display: none;
+    }
+
+    .cssLoginDer button {
+        font-size: 1rem;
+    }
+
+    .cssLoginDer a {
+        font-size: 1rem;
+    }
+
+    .cssLoginDer .iconInputs {
+        margin-top: 12px;
+    }
+
+    .cssLoginDer a svg {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .cssLoginDer a span {
+        margin-top: 0.25rem;
+    }
+}
+
+@media screen and (max-height:560px) {
+    .cssLoginDer {
+        overflow-y: auto;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+  font-family: 'Maax-Bold';
+  src: url('../fonts/Maax-Bold.eot');
+  src: url('../fonts/Maax-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Maax-Bold.woff') format('woff'),
+    url('../fonts/Maax-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.containModal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.containModalRecover {
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modalSeguimiento {
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modalContent {
+  height: auto;
+}
+
+.cerrarModal {
+  top: 0;
+}
+
+.tituloModal {
+  font-family: 'Maax-Bold', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+  font-family: 'Maax-Bold';
+  src: url('../fonts/Maax-Bold.eot');
+  src: url('../fonts/Maax-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Maax-Bold.woff') format('woff'),
+    url('../fonts/Maax-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.rowForm {
+  top: 1vh;
+  position: relative;
+  max-height: 45vh;
+  overflow-y: auto;
+}
+
+.rowInfo {
+  top: 2vh;
+  position: relative;
+  max-height: 65vh;
+  overflow-y: auto;
+}
+
+.topRowForm {
+  top: 10vh;
+}
+
+.inputForm {
+  position: relative;
+  margin-top: -0.25rem;
+}
+
+.spanInputForm {
+  position: relative;
+}
+
+.iconInputForm {
+  position: absolute;
+  padding: 0.25rem 1rem;
+  margin-top: 10px;
+  left: -2px;
+  top: 45px;
+}
+
+.labelForm {
+  top: 15px;
+  position: relative;
+  padding: 0.5rem;
+}
+
+.buttonForm {
+  position: relative;
+  float: right;
+  right: 10%;
+  width: 20%;
+  bottom: 3rem;
+}
+
+.numeroPaso {
+  width: 50px;
+  height: 50px;
+  font-family: 'Maax-Bold';
+}
+
+.labelPaso {
+  font-family: 'Noto Sans', sans-serif;
+  position: relative;
+  top: 1rem;
+  left: -0.5rem;
+  margin: auto;
+  text-align: center;
+}
+
+.registroAsp {
+  font-family: 'Maax-Bold';
+}
+
+.tituloPaso4 {
+  border-bottom: solid 1px;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  z-index: 2;
+}
+
+.cssPaso01 {
+  background: transparent url(../img/paso-01.svg) no-repeat center / contain;
+  margin: auto;
+  width: 20%;
+  height: 200px;
+  position: fixed;
+  float: right;
+  bottom: 60px;
+  right: 15px;
+}
+
+.cssPaso02 {
+  background: transparent url(../img/paso-02.svg) no-repeat center / contain;
+  width: 15%;
+  height: 120px;
+  position: fixed;
+  float: left;
+  bottom: 0px;
+  left: 4rem;
+  z-index: 3 !important;
+}
+
+.cssPaso03 {
+  background: transparent url(../img/paso-03.svg) no-repeat center / contain;
+  width: 15%;
+  height: 150px;
+  position: fixed;
+  float: left;
+  bottom: 0px;
+  left: 4rem;
+  z-index: 3 !important;
+}
+
+.cssPaso04 {
+  background: transparent url(../img/paso-04.svg) no-repeat center / contain;
+  width: 15%;
+  height: 150px;
+  position: fixed;
+  float: left;
+  bottom: 0px;
+  left: 4rem;
+  z-index: 3 !important;
+}
+
+@media screen and (min-height: 1000px) {
+  .buttonForm {
+    bottom: 5rem;
+  }
+  .cssMyAccount {
+    grid-template-columns: unset !important;
+  }
+  .titleProfile {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .containerPasos {
+    width: 100% !important;
+    left: 1.5rem;
+    top: -3vh;
+  }
+  
+  .numeroPaso {
+    width: 40px;
+    height: 40px;
+    padding: 0.25rem;
+  }
+
+  .numeroPaso span {
+    font-size: 1rem;
+    top: -0.25rem;
+    position: relative;
+    margin: 0.5rem;
+  }
+
+  .numeroPaso .labelPaso {
+    font-size: 0.8rem;
+    top: 0.5rem;
+  }
+
+  .rowForm {
+    grid-template-columns: unset !important;
+    grid-auto-flow: unset !important;
+    width: 100%;
+    left: 1.5rem;
+    top: -3vh;
+  }
+
+  .rowForm .inputForm input {
+    font-size: 1rem;
+  }
+
+  .rowForm .inputForm select {
+    font-size: 1rem;
+  }
+
+  .buttonForm {
+    position: relative;
+    left: 30vw;
+    float: left;  
+    bottom: 1.5rem !important;
+  }
+
+  .buttonForm button {
+    font-size: 1em !important;
+    width: 37vw;
+    padding: 0.75rem 1rem;
+    margin: 1rem 0.25rem;
+    left: 3vh;
+    top: 3vh;
+  }
+
+  .buttonsAntSig {
+    width: 100% !important;
+    left: 0;
+  }
+
+  .cssPaso01 {
+    width: 33%;
+    bottom: 0;
+  }
+
+  .cssPaso02 {
+    width: 25%;
+    height: 80px;
+  }
+
+  .cssPaso03 {
+    width: 25%;
+    height: 60px;
+  }
+
+  .cssPaso04 {
+    width: 25%;
+    height: 60px;
+  }
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@font-face {
+  font-family: 'Maax-Medium';
+  src: local('Maax Medium'), local('Maax-Medium');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Maax-Italic';
+  src: local('Maax Italic'), local('Maax-Italic');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Maax-BoldItalic';
+  src: local('Maax BoldItalic'), local('Maax-BoldItalic');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Maax-Black';
+  src: local('Maax Black'), local('Maax-Black');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Maax';
+  src: local('Maax');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Maax-Bold';
+  src: local('Maax Bold'), local('Maax-Bold');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Maax-Mediumitalic';
+  src: local('Maax MediumItalic'), local('Maax-Mediumitalic');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Maax';
+  src: url('css/fonts/Maax.eot');
+  src: url('css/fonts/Maax.eot?#iefix') format('embedded-opentype'),
+    url('css/fonts/Maax.woff') format('woff'),
+    url('css/fonts/Maax.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.cssHeader {
+  background-color: #40769a;
+  height: 60px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.sideBarMenu {
+  border-right: solid 1px rgba(170, 170, 170, 0.7);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 33;
+}
+
+.opcionMenu {
+  cursor: pointer;
+}
+
+.opcionCloseMenu {
+  position: absolute;
+  bottom: 1.5rem;
+  margin: 0.75rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.footerLogo {
+  position: fixed;
+  background-color: #ffffff;
+  height: 55px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.cssLogoSmartSm {
+  background: transparent url(css/img/LogoAlumdata.svg) no-repeat center /
+    contain;
+  margin: auto;
+  width: 20%;
+  height: 40px;
+  position: fixed;
+  float: right;
+  bottom: 10px;
+  right: 20px;
+  padding: 0.5rem;
+}
+
+.cardsContainer {
+  position: relative;
+  top: 3vh;
+  width: 88%;
+  left: 2rem;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding-bottom: 5%;
+}
+
+.cardsContainerProspects {
+  position: relative;
+  top: 3vh;
+  width: 88%;
+  left: 2rem;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding-bottom: 5%;
+}
+
+.flipCard {
+  background-color: transparent;
+  width: 22%;
+  height: 430px;
+  margin: 1rem 1rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.flip-card-inner {
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+
+.flipCard:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+.flipCardUser {
+  background-color: transparent;
+  width: 22%;
+  height: 430px;
+  margin: 1rem 1rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.flip-card-user-inner {
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+
+.flipCardUser:hover .flip-card-user-inner {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+/*.cardFront {
+  transition: all 0.8s ease;
+  display: block;
+}
+
+.cardBack {
+  transition: all 0.8s ease;
+  display: none;
+}*/
+
+.cardHome {
+  background-color: #ffffff;
+  box-shadow: 2px 2px 5px #d2d2d2;
+  border-radius: 20px;
+  width: 100%;
+  cursor: pointer;
+  height:430px;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.cardUserHome {
+  background-color: #ffffff;
+  box-shadow: 2px 2px 5px #d2d2d2;
+  border-radius: 20px;
+  cursor: pointer;
+  height: 430px;
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.cardHomeBack {
+  /*background-image: linear-gradient(
+    to bottom,
+    #72d9ef,
+    #84d7ff,
+    #a0d2ff,
+    #c1cdff,
+    #dfc7ff
+  );*/
+  background: linear-gradient(
+    180deg,
+    rgba(148, 201, 255, 1) 0%,
+    rgba(145, 218, 245, 1) 50%,
+    rgba(202, 203, 255, 1) 100%
+  );
+  box-shadow: 2px 2px 5px #d2d2d2;
+  border-radius: 20px;
+  width: 100%;
+  cursor: pointer;
+  height: 430px;
+  position: absolute;
+  top: 0;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  left: -2rem;
+}
+
+.cardUser {
+  background-color: #ffffff;
+  box-shadow: 2px 2px 5px #d2d2d2;
+  border-radius: 20px;
+  width: 22%;
+  height: 300px;
+}
+
+.cssMenuExpandido {
+  position: absolute;
+  left: 4rem;
+}
+
+.logoSmartMenu {
+  background: transparent url(css/img/LogoAlumdata.svg) no-repeat center /
+    contain;
+  margin: auto;
+  width: 80%;
+  height: 70px;
+  padding: 0.5rem;
+}
+
+.menuExpand {
+  width: 90%;
+  text-align: left;
+}
+
+.elementoMenuExpandido {
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  height: 35px;
+}
+
+.imgDetalle .avatarDetalle img {
+  width: 55px !important;
+}
+
+.cssLogoDgmxMenu {
+  background: transparent url(css/img/IsotipoAlumdata.svg) no-repeat center /
+    contain;
+  margin: auto;
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  height: 40px;
+  position: relative;
+  float: right;
+  top: 2rem;
+}
+
+.borderGradoInteres {
+  border-radius: 70px;
+  border-width: 5px;
+}
+
+.gradoAspiranteInd {
+  position: relative;
+  float: left;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  margin: 0.25rem;
+  margin-right: 0.375rem;
+}
+
+.iconNombreAspirante {
+  cursor: pointer;
+}
+
+.analyticContainer {
+  background-color: #eeeeee;
+  min-width: 90%;
+  min-height: 300px;
+}
+
+.analyticGeneralContainer {
+  min-height: 44vh;
+  max-height: 65vh;
+  overflow-y: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    'a b c '
+    'd e';
+}
+
+.notificationsContainer {
+  background-color: #f9f9f9;
+  position: fixed;
+  top: 60px;
+  right: 0;
+  width: 22vw;
+  height: 100vh;
+  z-index: 30;
+}
+
+.containerIndividualNotification {
+  position: relative;
+  width: 100%;
+  min-height: 50px;
+  border-bottom: solid 1px #aaaaaa;
+  left: 0;
+  cursor: pointer;
+}
+
+.notificationTop {
+  padding-bottom: 0.25rem;
+}
+
+.notificationBottom {
+  float: right;
+  position: relative;
+}
+
+.tabsAnaliticos .PrivateTabIndicator-colorSecondary-3 {
+  background-color: #033f67 !important;
+}
+
+.tabsAnaliticos .css-cjctlb-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #033f67 !important;
+}
+
+.MuiTabs-indicator {
+  background-color: #033f67 !important;
+}
+
+.numProspectos {
+  font-family: 'Maax-bold', sans-serif;
+}
+
+.detalleLicencia {
+  overflow-y: auto;
+  height: 70vh;
+  padding-bottom: 10vh;
+}
+
+.spanNameHeader {
+  border-bottom: solid 1px white;
+}
+
+.goBackButton {
+  width: 35px;
+  height: 35px;
+}
+
+.tooltipProgress {
+  background-color: rgba(255,255,255,0.8);
+  white-space: nowrap;
+  position: absolute;
+  top: -1.25rem;
+  left: 2.5rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 5px;
+}
+
+.cssAccountContainer {
+  overflow-y: auto;
+}
+
+@media screen and (min-height: 900px) {
+  .cardsContainer {
+    max-height: 85vh;
+  }
+
+  .footerLogo {
+    height: 80px;
+  }
+
+  .cssLogoSmartSm {
+    bottom: 20px;
+    height: 45px;
+  }
+}
+
+.thermometer {
+  height: 400px;
+  transform: rotate(90deg);
+  top: -180px;
+  /*width: auto;*/
+  left: 42%;
+}
+
+.thermometer__draw-b::after {
+  background-color: #2196f3 !important;
+}
+.thermometer__draw-b::before {
+  background-color: #2196f3 !important;
+}
+.thermometer .thermometer__bg-color {
+  background: linear-gradient(#f44336, #8bc34a, #2196f3) !important;
+}
+
+.reportGeneralContainer {
+  width: 96%;
+  margin-top: 7vh !important;
+  overflow: auto;
+  padding: 0 0 0 2rem;
+}
+
+.analyticsOutsideContainer {
+  width: 85%;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 650px) {
+  .cardsContainer {
+    left: 1rem;
+    width: 75%;
+  }
+
+  .flipCardUser {
+    width: 90%;
+  }
+
+  .cardsContainerProspects {
+    left: 1rem;
+    width: 75%;
+  }
+
+  .flipCard {
+    width: 90%;
+  }
+
+  .cssMenuExpandido {
+    width: 70vw;
+    position: fixed;
+    z-index: 30;
+  }
+
+  .notificationsContainer {
+    width: 50vw;
+  }
+
+  .cssMyAccount {
+    grid-template-columns: unset;
+  }
+
+  .cssAccountContainer {
+    width: 80%;
+    left: 1.5rem;
+  }
+
+  .cssMyAccount input {
+    font-size: 0.9rem;
+  }
+
+  .cssAccountContainerGral .buttonForm {
+    position: relative;
+    left: 30vw;
+    float: left;
+  }
+
+  .cssAccountContainerGral .buttonForm button {
+    font-size: 1em !important;
+    width: 50vw;
+  }
+
+  .cssAccountContainer .titleProfile {
+    margin-top: 5vh;
+  }
+
+  .containerTopActions {
+    right: 0;
+    width: 105%;
+  }
+
+  .containerTopActions .spanNameHeader {
+    display: none;
+  }
+
+  .containerTopActions .spanNameUser {
+    display: none;
+  }
+
+  .containerTopActions .userImgMini {
+    margin-right: 2rem;
+  }
+
+  .cssTitlePage {
+    margin-left: 3vw;
+    white-space: nowrap;
+  }
+
+  .detalleImagenLicencia {
+    width: 50%;
+  }
+
+  .contenidoLicencia {
+    width: 90%;
+    margin-left: 13vw;
+  }
+
+  .contenidoLicencia form input {
+    font-size: 0.9rem;
+  }
+
+  .tabsAnaliticos {
+    width: 82% !important;
+    margin-left: 17vw;
+  }
+
+  .analyticsFilters {
+    display: block !important;
+    width: 100%;
+  }
+
+  .analyticsFilters select {
+    font-size: 0.9rem !important;
+    padding-left: 1.5rem;
+  }
+
+  .analyticChartResp {
+    display: block !important;
+    width: 100% !important;
+    margin-top: -2rem;
+  }
+
+  .analyticChartResp .highcharts-container {
+    margin-top: 2rem;
+  }
+
+  .analyticGeneralContainer {
+    grid-template-columns: inherit !important;
+    grid-template-rows: inherit !important;
+  }
+
+  .analyticGeneralContainer .highcharts-container {
+    width: 100% !important;
+  }
+
+  .MuiButtonBase-root {
+    width: 30%;
+    font-size: 0.7rem !important;
+    left: 15px !important;
+  }
+
+  .css-bq23jk {
+    width: 90% !important;
+  }
+
+  .MuiTabPanel-root {
+    padding: 15px !important;
+    margin-left: 15px;
+  }
+
+  .tabsReportes {
+    width: 85% !important;
+    margin-left: 15vw;
+    margin-top: 8vh;
+  }
+
+  .reportsFilters {
+    display: block !important;
+    width: 95%;
+    height: 30vh;
+    overflow: auto;
+  }
+
+  .reportsFilters select {
+    font-size: 0.9rem !important;
+    padding-left: 1.5rem;
+  }
+
+  .smartDatatable th {
+    min-width: 100px !important;
+  }
+
+  .rdt_TableCell {
+    min-width: 100px !important;
+  }
+
+  .dataTableContainer {
+    width: 70vw;
+    height: 60vh;
+    overflow: auto;
+    margin-top: 5vh;
+  }
+
+  .fSQziN {
+    overflow-y: initial !important;
+    overflow-x: initial !important;
+  }
+
+  .containModal .modalContent {
+    width: 75% !important;
+    margin-left: 5rem;
+  }
+
+  .containModal .modalContent button {
+    padding-left: 2.25rem;
+  }
+
+  .containModal select {
+    font-size: 0.9rem;
+  }
+
+  .containModal input {
+    font-size: 0.9rem;
+  }
+
+  .containModal label {
+    font-size: 0.9rem;
+  }
+
+  .detalleAspiranteResp {
+    display: block !important;
+    width: 80%;
+    grid-template-columns: inherit;
+    margin-left: 17vw;
+  }
+
+  .titleDetalleAspResp {
+    width: 90%;
+    margin-left: 10vw;
+  }
+
+  .fSQziN {
+    overflow-y: initial !important;
+    overflow-x: initial !important;
+  }
+
+  .csxlVi {
+    overflow: visible !important;
+  }
+}
+
+:root {
+  --toastify-color-light: #fff;
+  --toastify-color-dark: #121212;
+  --toastify-color-info: #3498db;
+  --toastify-color-success: #07bc0c;
+  --toastify-color-warning: #f1c40f;
+  --toastify-color-error: #e74c3c;
+  --toastify-color-transparent: rgba(255, 255, 255, 0.7);
+  --toastify-icon-color-info: var(--toastify-color-info);
+  --toastify-icon-color-success: var(--toastify-color-success);
+  --toastify-icon-color-warning: var(--toastify-color-warning);
+  --toastify-icon-color-error: var(--toastify-color-error);
+  --toastify-toast-width: 320px;
+  --toastify-toast-background: #fff;
+  --toastify-toast-min-height: 64px;
+  --toastify-toast-max-height: 800px;
+  --toastify-font-family: sans-serif;
+  --toastify-z-index: 9999;
+  --toastify-text-color-light: #757575;
+  --toastify-text-color-dark: #fff;
+  --toastify-text-color-info: #fff;
+  --toastify-text-color-success: #fff;
+  --toastify-text-color-warning: #fff;
+  --toastify-text-color-error: #fff;
+  --toastify-spinner-color: #616161;
+  --toastify-spinner-color-empty-area: #e0e0e0;
+  --toastify-color-progress-light: linear-gradient(
+    to right,
+    #4cd964,
+    #5ac8fa,
+    #007aff,
+    #34aadc,
+    #5856d6,
+    #ff2d55
+  );
+  --toastify-color-progress-dark: #bb86fc;
+  --toastify-color-progress-info: var(--toastify-color-info);
+  --toastify-color-progress-success: var(--toastify-color-success);
+  --toastify-color-progress-warning: var(--toastify-color-warning);
+  --toastify-color-progress-error: var(--toastify-color-error);
+}
+
+.Toastify__toast-container {
+  z-index: var(--toastify-z-index);
+  -webkit-transform: translate3d(0, 0, var(--toastify-z-index) px);
+  position: fixed;
+  padding: 4px;
+  width: var(--toastify-toast-width);
+  box-sizing: border-box;
+  color: #fff;
+}
+.Toastify__toast-container--top-left {
+  top: 1em;
+  left: 1em;
+}
+.Toastify__toast-container--top-center {
+  top: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.Toastify__toast-container--top-right {
+  top: 1em;
+  right: 1em;
+}
+.Toastify__toast-container--bottom-left {
+  bottom: 1em;
+  left: 1em;
+}
+.Toastify__toast-container--bottom-center {
+  bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.Toastify__toast-container--bottom-right {
+  bottom: 1em;
+  right: 1em;
+}
+
+@media only screen and (max-width : 480px) {
+  .Toastify__toast-container {
+    width: 100vw;
+    padding: 0;
+    left: 0;
+    margin: 0;
+  }
+  .Toastify__toast-container--top-left, .Toastify__toast-container--top-center, .Toastify__toast-container--top-right {
+    top: 0;
+    transform: translateX(0);
+  }
+  .Toastify__toast-container--bottom-left, .Toastify__toast-container--bottom-center, .Toastify__toast-container--bottom-right {
+    bottom: 0;
+    transform: translateX(0);
+  }
+  .Toastify__toast-container--rtl {
+    right: 0;
+    left: initial;
+  }
+}
+.Toastify__toast {
+  position: relative;
+  min-height: var(--toastify-toast-min-height);
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  padding: 8px;
+  border-radius: 4px;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 15px 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  max-height: var(--toastify-toast-max-height);
+  overflow: hidden;
+  font-family: var(--toastify-font-family);
+  cursor: pointer;
+  direction: ltr;
+}
+.Toastify__toast--rtl {
+  direction: rtl;
+}
+.Toastify__toast-body {
+  margin: auto 0;
+  flex: 1 1 auto;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+}
+.Toastify__toast-body > div:last-child {
+  flex: 1;
+}
+.Toastify__toast-icon {
+  margin-inline-end: 10px;
+  width: 20px;
+  flex-shrink: 0;
+  display: flex;
+}
+
+.Toastify--animate {
+  animation-fill-mode: both;
+  animation-duration: 0.7s;
+}
+
+.Toastify--animate-icon {
+  animation-fill-mode: both;
+  animation-duration: 0.3s;
+}
+
+@media only screen and (max-width : 480px) {
+  .Toastify__toast {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+}
+.Toastify__toast-theme--dark {
+  background: var(--toastify-color-dark);
+  color: var(--toastify-text-color-dark);
+}
+.Toastify__toast-theme--light {
+  background: var(--toastify-color-light);
+  color: var(--toastify-text-color-light);
+}
+.Toastify__toast-theme--colored.Toastify__toast--default {
+  background: var(--toastify-color-light);
+  color: var(--toastify-text-color-light);
+}
+.Toastify__toast-theme--colored.Toastify__toast--info {
+  color: var(--toastify-text-color-info);
+  background: var(--toastify-color-info);
+}
+.Toastify__toast-theme--colored.Toastify__toast--success {
+  color: var(--toastify-text-color-success);
+  background: var(--toastify-color-success);
+}
+.Toastify__toast-theme--colored.Toastify__toast--warning {
+  color: var(--toastify-text-color-warning);
+  background: var(--toastify-color-warning);
+}
+.Toastify__toast-theme--colored.Toastify__toast--error {
+  color: var(--toastify-text-color-error);
+  background: var(--toastify-color-error);
+}
+
+.Toastify__progress-bar-theme--light {
+  background: var(--toastify-color-progress-light);
+}
+.Toastify__progress-bar-theme--dark {
+  background: var(--toastify-color-progress-dark);
+}
+.Toastify__progress-bar--info {
+  background: var(--toastify-color-progress-info);
+}
+.Toastify__progress-bar--success {
+  background: var(--toastify-color-progress-success);
+}
+.Toastify__progress-bar--warning {
+  background: var(--toastify-color-progress-warning);
+}
+.Toastify__progress-bar--error {
+  background: var(--toastify-color-progress-error);
+}
+.Toastify__progress-bar-theme--colored.Toastify__progress-bar--info, .Toastify__progress-bar-theme--colored.Toastify__progress-bar--success, .Toastify__progress-bar-theme--colored.Toastify__progress-bar--warning, .Toastify__progress-bar-theme--colored.Toastify__progress-bar--error {
+  background: var(--toastify-color-transparent);
+}
+
+.Toastify__close-button {
+  color: #fff;
+  background: transparent;
+  outline: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s ease;
+  align-self: flex-start;
+}
+.Toastify__close-button--light {
+  color: #000;
+  opacity: 0.3;
+}
+.Toastify__close-button > svg {
+  fill: currentColor;
+  height: 16px;
+  width: 14px;
+}
+.Toastify__close-button:hover, .Toastify__close-button:focus {
+  opacity: 1;
+}
+
+@keyframes Toastify__trackProgress {
+  0% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+.Toastify__progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  z-index: var(--toastify-z-index);
+  opacity: 0.7;
+  transform-origin: left;
+}
+.Toastify__progress-bar--animated {
+  animation: Toastify__trackProgress linear 1 forwards;
+}
+.Toastify__progress-bar--controlled {
+  transition: transform 0.2s;
+}
+.Toastify__progress-bar--rtl {
+  right: 0;
+  left: initial;
+  transform-origin: right;
+}
+
+.Toastify__spinner {
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border: 2px solid;
+  border-radius: 100%;
+  border-color: var(--toastify-spinner-color-empty-area);
+  border-right-color: var(--toastify-spinner-color);
+  animation: Toastify__spin 0.65s linear infinite;
+}
+
+@keyframes Toastify__bounceInRight {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  from {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(-25px, 0, 0);
+  }
+  75% {
+    transform: translate3d(10px, 0, 0);
+  }
+  90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes Toastify__bounceOutRight {
+  20% {
+    opacity: 1;
+    transform: translate3d(-20px, 0, 0);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(2000px, 0, 0);
+  }
+}
+@keyframes Toastify__bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes Toastify__bounceOutLeft {
+  20% {
+    opacity: 1;
+    transform: translate3d(20px, 0, 0);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(-2000px, 0, 0);
+  }
+}
+@keyframes Toastify__bounceInUp {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  from {
+    opacity: 0;
+    transform: translate3d(0, 3000px, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, -20px, 0);
+  }
+  75% {
+    transform: translate3d(0, 10px, 0);
+  }
+  90% {
+    transform: translate3d(0, -5px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes Toastify__bounceOutUp {
+  20% {
+    transform: translate3d(0, -10px, 0);
+  }
+  40%, 45% {
+    opacity: 1;
+    transform: translate3d(0, 20px, 0);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, -2000px, 0);
+  }
+}
+@keyframes Toastify__bounceInDown {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+  90% {
+    transform: translate3d(0, 5px, 0);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes Toastify__bounceOutDown {
+  20% {
+    transform: translate3d(0, 10px, 0);
+  }
+  40%, 45% {
+    opacity: 1;
+    transform: translate3d(0, -20px, 0);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 2000px, 0);
+  }
+}
+.Toastify__bounce-enter--top-left, .Toastify__bounce-enter--bottom-left {
+  animation-name: Toastify__bounceInLeft;
+}
+.Toastify__bounce-enter--top-right, .Toastify__bounce-enter--bottom-right {
+  animation-name: Toastify__bounceInRight;
+}
+.Toastify__bounce-enter--top-center {
+  animation-name: Toastify__bounceInDown;
+}
+.Toastify__bounce-enter--bottom-center {
+  animation-name: Toastify__bounceInUp;
+}
+
+.Toastify__bounce-exit--top-left, .Toastify__bounce-exit--bottom-left {
+  animation-name: Toastify__bounceOutLeft;
+}
+.Toastify__bounce-exit--top-right, .Toastify__bounce-exit--bottom-right {
+  animation-name: Toastify__bounceOutRight;
+}
+.Toastify__bounce-exit--top-center {
+  animation-name: Toastify__bounceOutUp;
+}
+.Toastify__bounce-exit--bottom-center {
+  animation-name: Toastify__bounceOutDown;
+}
+
+@keyframes Toastify__zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes Toastify__zoomOut {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  to {
+    opacity: 0;
+  }
+}
+.Toastify__zoom-enter {
+  animation-name: Toastify__zoomIn;
+}
+
+.Toastify__zoom-exit {
+  animation-name: Toastify__zoomOut;
+}
+
+@keyframes Toastify__flipIn {
+  from {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+  to {
+    transform: perspective(400px);
+  }
+}
+@keyframes Toastify__flipOut {
+  from {
+    transform: perspective(400px);
+  }
+  30% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    opacity: 1;
+  }
+  to {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    opacity: 0;
+  }
+}
+.Toastify__flip-enter {
+  animation-name: Toastify__flipIn;
+}
+
+.Toastify__flip-exit {
+  animation-name: Toastify__flipOut;
+}
+
+@keyframes Toastify__slideInRight {
+  from {
+    transform: translate3d(110%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes Toastify__slideInLeft {
+  from {
+    transform: translate3d(-110%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes Toastify__slideInUp {
+  from {
+    transform: translate3d(0, 110%, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes Toastify__slideInDown {
+  from {
+    transform: translate3d(0, -110%, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes Toastify__slideOutRight {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    visibility: hidden;
+    transform: translate3d(110%, 0, 0);
+  }
+}
+@keyframes Toastify__slideOutLeft {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    visibility: hidden;
+    transform: translate3d(-110%, 0, 0);
+  }
+}
+@keyframes Toastify__slideOutDown {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    visibility: hidden;
+    transform: translate3d(0, 500px, 0);
+  }
+}
+@keyframes Toastify__slideOutUp {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    visibility: hidden;
+    transform: translate3d(0, -500px, 0);
+  }
+}
+.Toastify__slide-enter--top-left, .Toastify__slide-enter--bottom-left {
+  animation-name: Toastify__slideInLeft;
+}
+.Toastify__slide-enter--top-right, .Toastify__slide-enter--bottom-right {
+  animation-name: Toastify__slideInRight;
+}
+.Toastify__slide-enter--top-center {
+  animation-name: Toastify__slideInDown;
+}
+.Toastify__slide-enter--bottom-center {
+  animation-name: Toastify__slideInUp;
+}
+
+.Toastify__slide-exit--top-left, .Toastify__slide-exit--bottom-left {
+  animation-name: Toastify__slideOutLeft;
+}
+.Toastify__slide-exit--top-right, .Toastify__slide-exit--bottom-right {
+  animation-name: Toastify__slideOutRight;
+}
+.Toastify__slide-exit--top-center {
+  animation-name: Toastify__slideOutUp;
+}
+.Toastify__slide-exit--bottom-center {
+  animation-name: Toastify__slideOutDown;
+}
+
+@keyframes Toastify__spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=ReactToastify.css.map */
+.smartDatatable {
+  width: 100%;
+}
+.smartDatatable th {
+  font-size: 14px;
+  padding: 10px 0;
+  font-weight: 400;
+  background-color: #40769A;
+  color: #fff;
+}
+
+/*# sourceMappingURL=index.css.map */

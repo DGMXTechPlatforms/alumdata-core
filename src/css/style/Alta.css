@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+  font-family: 'Maax-Bold';
+  src: url('../fonts/Maax-Bold.eot');
+  src: url('../fonts/Maax-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Maax-Bold.woff') format('woff'),
+    url('../fonts/Maax-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.rowForm {
+  top: 1vh;
+  position: relative;
+  max-height: 45vh;
+  overflow-y: auto;
+}
+
+.rowInfo {
+  top: 2vh;
+  position: relative;
+  max-height: 65vh;
+  overflow-y: auto;
+}
+
+.topRowForm {
+  top: 10vh;
+}
+
+.inputForm {
+  position: relative;
+  margin-top: -0.25rem;
+}
+
+.spanInputForm {
+  position: relative;
+}
+
+.iconInputForm {
+  position: absolute;
+  padding: 0.25rem 1rem;
+  margin-top: 10px;
+  left: -2px;
+  top: 45px;
+}
+
+.labelForm {
+  top: 15px;
+  position: relative;
+  padding: 0.5rem;
+}
+
+.buttonForm {
+  position: relative;
+  float: right;
+  right: 10%;
+  width: 20%;
+  bottom: 3rem;
+}
+
+.numeroPaso {
+  width: 50px;
+  height: 50px;
+  font-family: 'Maax-Bold';
+}
+
+.labelPaso {
+  font-family: 'Noto Sans', sans-serif;
+  position: relative;
+  top: 1rem;
+  left: -0.5rem;
+  margin: auto;
+  text-align: center;
+}
+
+.registroAsp {
+  font-family: 'Maax-Bold';
+}
+
+.tituloPaso4 {
+  border-bottom: solid 1px;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  z-index: 2;
+}
+
+.cssPaso01 {
+  background: transparent url(../img/paso-01.svg) no-repeat center / contain;
+  margin: auto;
+  width: 20%;
+  height: 200px;
+  position: fixed;
+  float: right;
+  bottom: 60px;
+  right: 15px;
+}
+
+.cssPaso02 {
+  background: transparent url(../img/paso-02.svg) no-repeat center / contain;
+  width: 15%;
+  height: 120px;
+  position: fixed;
+  float: left;
+  bottom: 0px;
+  left: 4rem;
+  z-index: 3 !important;
+}
+
+.cssPaso03 {
+  background: transparent url(../img/paso-03.svg) no-repeat center / contain;
+  width: 15%;
+  height: 150px;
+  position: fixed;
+  float: left;
+  bottom: 0px;
+  left: 4rem;
+  z-index: 3 !important;
+}
+
+.cssPaso04 {
+  background: transparent url(../img/paso-04.svg) no-repeat center / contain;
+  width: 15%;
+  height: 150px;
+  position: fixed;
+  float: left;
+  bottom: 0px;
+  left: 4rem;
+  z-index: 3 !important;
+}
+
+@media screen and (min-height: 1000px) {
+  .buttonForm {
+    bottom: 5rem;
+  }
+  .cssMyAccount {
+    grid-template-columns: unset !important;
+  }
+  .titleProfile {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .containerPasos {
+    width: 100% !important;
+    left: 1.5rem;
+    top: -3vh;
+  }
+  
+  .numeroPaso {
+    width: 40px;
+    height: 40px;
+    padding: 0.25rem;
+  }
+
+  .numeroPaso span {
+    font-size: 1rem;
+    top: -0.25rem;
+    position: relative;
+    margin: 0.5rem;
+  }
+
+  .numeroPaso .labelPaso {
+    font-size: 0.8rem;
+    top: 0.5rem;
+  }
+
+  .rowForm {
+    grid-template-columns: unset !important;
+    grid-auto-flow: unset !important;
+    width: 100%;
+    left: 1.5rem;
+    top: -3vh;
+  }
+
+  .rowForm .inputForm input {
+    font-size: 1rem;
+  }
+
+  .rowForm .inputForm select {
+    font-size: 1rem;
+  }
+
+  .buttonForm {
+    position: relative;
+    left: 30vw;
+    float: left;  
+    bottom: 1.5rem !important;
+  }
+
+  .buttonForm button {
+    font-size: 1em !important;
+    width: 37vw;
+    padding: 0.75rem 1rem;
+    margin: 1rem 0.25rem;
+    left: 3vh;
+    top: 3vh;
+  }
+
+  .buttonsAntSig {
+    width: 100% !important;
+    left: 0;
+  }
+
+  .cssPaso01 {
+    width: 33%;
+    bottom: 0;
+  }
+
+  .cssPaso02 {
+    width: 25%;
+    height: 80px;
+  }
+
+  .cssPaso03 {
+    width: 25%;
+    height: 60px;
+  }
+
+  .cssPaso04 {
+    width: 25%;
+    height: 60px;
+  }
+
+}
